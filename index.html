@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="ar">
- 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeyGen Hamster by Mohamed / telegram: @ll_l_ll_7</title>
+    <title>مولد مفاتيح هامستر بواسطة </title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #00c6ff, #0072ff);
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 20px;
             color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
-
+        
         .container {
             display: flex;
             justify-content: space-between;
-            max-width: 900px;
-            width: 100%;
-            margin: 20px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-
+        
         .form-container {
             width: 48%;
+            background-color: #fff;
             padding: 20px;
-            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            overflow: auto;
         }
-
+        
         .form-container h2 {
             margin-top: 0;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-align: center;
-            color: #0072ff;
         }
-
+        
         .form-container>* {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
-
+        
         input[type="file"],
         input[type="text"],
         textarea,
         select {
-            width: calc(100% - 20px);
-            padding: 12px;
-            border: 2px solid #0072ff;
-            border-radius: 8px;
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             box-sizing: border-box;
-            font-size: 16px;
         }
-
+        
         select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
             background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4"><path d="M4 4L0 0h8z"/></svg>');
             background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: 12px;
+            background-position: right 8px center;
+            background-size: 8px;
         }
-
+        
         button {
-            width: calc(100% - 20px);
-            padding: 12px;
-            background-color: #0072ff;
-            color: #ffffff;
+            width: calc(100% - 22px);
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
             border: none;
-            border-radius: 8px;
+            border-radius: 5px;
             cursor: pointer;
             margin-top: 10px;
             display: block;
-            font-size: 16px;
         }
-
+        
         button:hover {
             background-color: #0056b3;
         }
-
+        
         .custom-file-upload {
             display: inline-block;
             position: relative;
             overflow: hidden;
             margin-top: 10px;
         }
-
+        
         .custom-file-upload input[type="file"] {
             position: absolute;
             top: 0;
@@ -100,54 +94,52 @@
             cursor: pointer;
             opacity: 0;
         }
-
+        
         label {
             display: block;
-            font-size: 16px;
-            color: #0072ff;
         }
-
+        
         #jsonDataDisplay {
             white-space: pre;
             background-color: #f9f9f9;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             margin-top: 10px;
             font-family: monospace;
             overflow-x: auto;
-            max-height: 150px;
+            max-height: 100px;
         }
-
+        
         .json-key {
-            color: #d9534f;
+            color: red;
         }
-
+        
         .json-string {
-            color: #5bc0de;
+            color: green;
         }
-
+        
         .json-boolean {
-            color: #f0ad4e;
+            color: goldenrod;
         }
-
+        
         @media screen and (min-width: 801px) {
             .container {
                 gap: 20px;
             }
         }
-
+        
         @media screen and (max-width: 800px) {
             .container {
                 flex-direction: column;
                 align-items: center;
             }
-
+            
             .form-container {
                 width: 95%;
                 margin-bottom: 20px;
             }
-
+            
             #jsonDataDisplay {
                 width: 95%;
                 margin: 0 auto;
@@ -155,23 +147,33 @@
         }
     </style>
 </head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>مولد اكواد هامستر لكل الالعاب</h2>
+            <!-- باقي النموذج هنا -->
+        </div>
+    </div>
+</body>
+</html>
  
 <body>
     <div class="container">
         <div class="form-container">
-            <h2>مولد اكواد هامستر بواسطة @ll_l_ll_7</h2>
-            <label for="appSelect">اختار لعبة:</label>
+            <h2>مولد مفاتيح هامستر بواسطة @ll_l_ll_7</h2>
+            <label for="appSelect">اختر لعبة:</label>
             <select id="appSelect" onchange="updateConstants()">
                 <option value="Bike">Bike Ride 3D</option>
                 <option value="Clone">My Clone Army</option>
                 <option value="Chain">Chain Cube 2048</option>
                 <option value="Train">Train Miner</option>
             </select>
-            <button onclick="generateKeys()">قم بتوليد الاكواد</button>
+            <button onclick="generateKeys()">قم بتوليد المفاتيح</button>
+            <button onclick="copyKeys()">قم بنسخ المفاتيح المولدة</button>
         </div>
  
         <div class="form-container">
-            <h2>الاكواد المولدة</h2>
+            <h2>المفاتيح المولدة</h2>
             <pre id="jsonDataDisplay" class="key-display"></pre>
         </div>
     </div>
@@ -204,6 +206,7 @@
         let USER_ID = 'test_id';
         let USER = 'test_user';
         let HASH = 'test_hash';
+        let generatedKeys = [];
  
         function updateConstants() {
             const selectedApp = document.getElementById('appSelect').value;
@@ -340,11 +343,11 @@
             const clientToken = await login(clientId);
  
             if (!clientToken) {
-                appendToDisplay('اعد المحاولة.');
+                appendToDisplay('فشل، جرب مرا اخري.');
                 return null;
             }
  
-            appendToDisplay('يتم توليد الكود الخاص بك (الوقت المقدر: دقيقة ونصف)...');
+            appendToDisplay('يتم توليد ااكود الخاص بك (الوقت المقدر: دقيقة ونصف)...');
  
             for (let j = 0; j < 7; j++) {
                 if (await emulateProgress(clientToken)) {
@@ -386,10 +389,12 @@
             const keys = await Promise.all(keyPromises);
  
             const validKeys = keys.filter(key => key !== null);
+            generatedKeys = validKeys.slice(-4); // Keep the last 4 valid keys
+ 
             if (validKeys.length > 0) {
                 appendToDisplay(`Valid keys found: ${validKeys.join(', ')}`);
             } else {
-                appendToDisplay('end.');
+                appendToDisplay('No valid keys found.');
             }
         }
  
@@ -401,6 +406,26 @@
  
         function generateKeys() {
             findValidKeys(NUM_KEYS_TO_GENERATE);
+        }
+ 
+        function copyKeys() {
+            const keyDisplay = document.getElementById('jsonDataDisplay').textContent;
+            const keyPattern = /Generated key:\s([A-Za-z0-9\-]+)/g;
+            const keys = [];
+            let match;
+            while ((match = keyPattern.exec(keyDisplay)) !== null) {
+                keys.push(match[1]);
+            }
+            if (keys.length > 0) {
+                const keysText = keys.join('\n');
+                navigator.clipboard.writeText(keysText).then(() => {
+                    alert('تم نسخ الاكواد الي الحافظة:\n' + keysText);
+                }).catch(err => {
+                    console.error('خطأ في نسخ الاكواد:', err);
+                });
+            } else {
+                alert('لا اكواد لنسخها.');
+            }
         }
     </script>
 </body>
